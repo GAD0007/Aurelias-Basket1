@@ -46,6 +46,18 @@ header{
      -ms-overflow-style: none;  /* For Internet Explorer and Edge */
    
   }
+  .scroll-item img {
+    border-radius: 25px; /* Adjust the value as needed */
+  }
+  .scroll-container2 {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 56px; /* Spacing between items */
+     scrollbar-width: none; /* For Firefox */
+     -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+   
+  }
   .scroll-container::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
   }
@@ -100,6 +112,12 @@ section.A{
 }
 .Favourite-frame{
     /* border: 5px solid#C0A342; */
+}
+.fav-details{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: medium;
 }
 .Favourite-Details{
     text-align: center;
@@ -2070,12 +2088,13 @@ a {
 .brand-name{
     color: #C0A342;
 
-    font-size:1.2em;
+    font-size:1.4em;
     font-weight: bolder;
 
  }
  .intro-text{
-    font-size: 0.6em;
+    font-size: 0.8em;
+    width: 100%;
  }
 }
 @media screen and (max-width: 900px) {
@@ -2408,6 +2427,16 @@ a {
     }
 
 @media screen and (max-width: 700px) {
+    .fav-details{
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
     .offcanvas-header{
         margin-top: 30px;
     }
@@ -2615,7 +2644,7 @@ z-index: 1;
         font-weight:500;
         font-size:large; */
         border-bottom: none !important;
-        color: rgb(50, 50, 65);
+        color: #C0A342;
         transition: 0.5s ease;
         font-weight: bold;
         /* margin-bottom: 20px; */
@@ -2628,7 +2657,7 @@ z-index: 1;
         font-weight:500;
         font-size:large; */
         border-bottom: none !important;
-        color: rgb(50, 50, 65);
+        color:#f3da86;
         transition: 0.5s ease;
         
     
