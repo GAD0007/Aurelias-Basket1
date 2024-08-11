@@ -5,6 +5,42 @@ const contactBtn= document.getElementById('contact-btn')
 const aboutBtn= document.getElementById('about-btn')
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const popup = document.getElementById('popup');
+  const closeBtn = document.querySelector('.close-btn');
+  let hasShown = false; // Flag to ensure the pop-up only shows once
+
+  // Function to show the pop-up
+  function showPopup() {
+    popup.classList.remove('hidden-pop');
+    popup.style.transform = 'translateX(0)'; // Slide in from right
+  }
+
+  // Function to hide the pop-up
+  function hidePopup() {
+    popup.style.transform = 'translate(100%)'; // Slide out to the right
+    setTimeout(() => {
+      popup.classList.add('hidden-pop');
+    }, 600); // Matches the duration of the transition
+  }
+
+  // Function to handle scroll event
+  function handleScroll() {
+    if (window.scrollY > 600 && !hasShown) {
+      showPopup();
+      hasShown = true; // Ensure it only shows once
+    }
+  }
+
+  // Show the pop-up when scrolling down 600px
+  window.addEventListener('scroll', handleScroll);
+
+  // Hide the pop-up when the close button is clicked
+  closeBtn.addEventListener('click', hidePopup);
+
+  // Optionally, show the pop-up on page load if needed
+  // showPopup();
+});
 
 
 // Array of image paths

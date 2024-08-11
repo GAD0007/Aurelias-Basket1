@@ -43,7 +43,14 @@ function SubForm (){
   
   <body class="mx-auto">
     <!-- <div class="button" id="scrollToTopBtn" onclick="scrollToTop()"><img src="images/top (1).png" alt=""></div> -->
-   
+    <div id="popup" class="popup hidden-pop">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <!-- <h2>Your Pop-Up Content</h2> -->
+        <p class="blog-text">Visit our <a href="#">blog</a> to read captivating and heartfelt accounts from our customers.
+        </p>
+      </div>
+    </div>
 
  <div class="navigation-small overlay-small-screen">
   <div class="sticky-bar">
@@ -151,7 +158,7 @@ function SubForm (){
       <!-- <div class="greet mb-0 pb-1 mt-5 pt-3">
         Welcome to <span class="joe-text">Aurelia's Basket</span>
       </div> -->
-      <h1 class="brand-detail mb-1">Get Customizable <br> Premium Gift Boxes<br/> in Lagos </h1>
+      <h1 class="test1 brand-detail mb-1">Get Customizable <br> Premium Gift Boxes<br/> in Lagos </h1>
       <!-- <div class="brand-detail-2">Boxes you can trust in Lagos</div> -->
       <div class="shop-btn-box mt-3">
         <a href="store.html"> <button class="shop-btn">Shop now</button> </a>
@@ -289,111 +296,93 @@ function SubForm (){
 
 
 <!-- content on the services of the brand-->
+
 <section class="C">
   <div class="container-fluid">
     <div class="row">
-      
-     
       <div class="col-md-12 text-start gy-2">
         <h2 class="Best-seller">Best Selling Packages....</h2>
       </div>
       <div class="new-arrivals">
         <figure class="suites">
           <div class="row gy-2">
-            <div class="col-md-4 col-sm-6 col-12">
-             
-           <div class="Favourite-frame">
-            <span class="imgwrap">
-              <a href="#">
-                <img class="rooms img-fluid" src="images/IMG_5566 (1).png" alt="first-favourite deal">
-              </a>
-                <br>
-              <p class="shirt-name text-center">
-                   <!-- Alien Invasion -->
-               <!-- <br> -->
-               <span class="state">
-                <div class="Favourite-Details">
-                  <div class="fav-name"><h3>Benachin Lunch Tray</h3></div>
-                  <div class="fav-price"><small>&#8358;</small>125,000</div>
-
-                </div>
-           </div>
-                  <div class="text-center ">
-                    <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
-                  </div>
-                 </span> 
-                </p>
-              </span>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12 mx-auto">
-              
-              <div class="new-box">
-               <div class="wrapper">
-                <span class="imgwrap">          
-                  <a href="store.html">
-                    <img class="rooms img-fluid" src="images/money4.png " alt="new arrrival">
-                  </a>
+            <div class="scroll-container">
+              <div class="col-md-4 col-sm-6 col-12 scroll-item">
+                <div class="Favourite-frame">
+                  <span class="imgwrap">
+                    <a href="#">
+                      <img class="rooms img-fluid" src="images/IMG_5566 (1).png" alt="first-favourite deal">
+                    </a>
                     <br>
-                  <p class="shirt-name text-center">
-                    
-                      <!-- Jungle King Print -->
-                    
-                   <!-- <br> -->
-                   <span class="state">
-                    <div class="Favourite-Details">
-                      <div class="fav-name"><h3>Customizable Gift Box</h3></div>
-                      <div class="fav-price"><small>&#8358;</small>----</div>
-                      
-    
-                    </div>
-                    <div class="text-center ">
-                      <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
-                    </div>
-                   </span>
-                 </p>
-                </span>
-               </div>
+                    <p class="shirt-name text-center">
+                      <span class="state">
+                        <div class="Favourite-Details">
+                          <div class="fav-name"><h3>Benachin Lunch Tray</h3></div>
+                          <div class="fav-price"><small>&#8358;</small>125,000</div>
+                        </div>
+                        <div class="text-center">
+                          <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+                        </div>
+                      </span>
+                    </p>
+                  </span>
+                </div>
               </div>
-            </div>
-           <div class="col-md-4 col-sm-6 col-12">
-             
-              <span class="imgwrap">
-                <a href="#">
-                  <img class="rooms img-fluid" src="images/IMG_4318.png" alt="third-favourite deal">
-                </a>
+
+              <div class="col-md-4 col-sm-6 col-12 scroll-item mx-auto">
+                <div class="new-box">
+                  <div class="wrapper">
+                    <span class="imgwrap">          
+                      <a href="store.html">
+                        <img class="rooms img-fluid" src="images/IMG_4771 (1).png" alt="new arrrival">
+                      </a>
+                      <br>
+                      <p class="shirt-name text-center">
+                        <span class="state">
+                          <div class="Favourite-Details">
+                            <div class="fav-name"><h3>Customizable Gift Box</h3></div>
+                            <div class="fav-price"><small>&#8358;</small>----</div>
+                          </div>
+                          <div class="text-center">
+                            <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+                          </div>
+                        </span>
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-12 scroll-item">
+                <span class="imgwrap">
+                  <a href="#">
+                    <img class="rooms img-fluid" src="images/IMG_4318.png" alt="third-favourite deal">
+                  </a>
                   <br>
-                <p class="shirt-name text-center">
-                  
-                    <!-- Made In IB -->
-                  
-                    <!-- <br> -->
+                  <p class="shirt-name text-center">
                     <span class="state">
                       <div class="Favourite-Details">
                         <div class="fav-name"><h3>Customizable Gift Box</h3></div>
                         <div class="fav-price"><small>&#8358;</small>----</div>
-                        
-      
                       </div>
                       <div class="text-center">
                         <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
                       </div>
-                     </span>
-                </p>    
-              </span>
+                    </span>
+                  </p>    
+                </span>
+              </div>
             </div>
             <div class="col-md-12 text-center text-light">For more items, visit our <a href="">store</a></div>
-            <div class="blur"><span class=blur4></span></div>
-           
-         
+            <div class="blur"><span class="blur4"></span></div>
+          </div>
         </figure>
-        
       </div>
-      
-    
     </div>
   </div>
-
 </section>
+
+
 
 <!-- content on reasons to choose buisness-->
 <section class="D">
@@ -433,119 +422,6 @@ function SubForm (){
   </div>
 </section>
 <!-- popular questions and Sub-content for section E-->
-<section class="E">
-  <div class="container-fluid">
-    <div class="row mt-5 pt-2">
-      <div class="col-md-6 text-center">
-        <div class="">
-          <span class="line2"></span>
-          <h5 class="spec">Popular questions</h5>
-          <span class="line2"></span>
-        </div>
-        <div class="">
-          <h3 class="discover">
-            Discover Frequently <br />asked questions
-          </h3>
-        </div>
-        <div class="">
-         <a href=""
-
-           class="link-nav"
-           data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
-          aria-controls="offcanvasWithBothOptions">
-          <button type="button" class="contact-btn">
-            Contact us
-            <img
-            src="images/arrow-narrow-up-right.png"
-            alt="up-right"
-            class="up-right-png"
-            />
-          </button>
-        </a>
-        </div>
-      </div>
-      <!--  acccordions-->
-      <div class="col-md-6 col-sm-12 pt-4">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item border-bottom-0">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button show rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                How long does delivery take?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Delivery within Nigeria takes 1-3 days, while International
-                deliveries take maximum of 1 week.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item border-bottom-0">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button
-                class="accordion-button collapsed rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
-                Is there International delivery?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Jet x Joe can deliver to anywhere in the World.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item border-bottom-0">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button
-                class="accordion-button collapsed rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                What payment method is available?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                We integrated paystack, so all forms of payment methods are available. Card, transfer, bank paymenets, ussd etc....
-              </div>
-            </div>
-          </div>
-   
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <footer>
   <div class="container-fluid">
@@ -579,6 +455,9 @@ id="about-btn" -->
         </p>
         <p>
           <a href="store.html">Store</a>
+        </p>
+        <p>
+          <a href="store.html">Blog</a>
         </p>
       
       </div>
@@ -620,8 +499,7 @@ id="about-btn" -->
       </div>
       <div class="col-md-12 text-center mt-5">
         <div class="copyright py-3">
-          &copy;2024 Jet & Joe. All rights reserved <br>
-          For a Website design like this, contact 09133516780 or <a href="https://wa.me/message/QYELHNXF2RFDA1">click here</a>
+          &copy;2024 Aurelia's Basket. All rights reserved
         </div>
       </div>
     </div>

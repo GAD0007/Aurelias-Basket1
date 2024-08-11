@@ -21,6 +21,47 @@ header{
     /* z-index: 1000; */
     
 }
+@keyframes scroll-animation {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+  }
+  
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px; /* Spacing between items */
+     scrollbar-width: none; /* For Firefox */
+     -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+   
+  }
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .scroll-item {
+      flex: 0 0 100%; /* Takes full width by default */
+      scroll-snap-align: start; /* Optional for smooth snapping */
+    }
+    
+    @media (max-width: 768px) {
+        .scroll-item {
+        animation: scroll-animation 30s linear infinite;
+      flex: 0 0 calc(33.333% - 16px); /* 3 items per row on larger screens */
+    }
+  }
+  
 .logo-jet-nav{
     height: 30px;
 }
@@ -1686,12 +1727,48 @@ a {
     }
     .About-Aurelia{
        background-color:  rgb(18, 19, 18);
-       padding-top: 40px;
-       padding-bottom: 40px;
+       padding-top: 20px;
+       padding-bottom: 10px;
 
     }
+    .hidden-pop {
+        display: none;
+      }
+      .blog-text{
+        color: rgb(46, 45, 45);
+      }
+      /* Styles for the popup */
+      .popup {
+        position: fixed;
+        top: 40%;
+        right: 0%;
+        width: 300px;
+        height: 20%;
+        background-color: #e2e0d3;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+      }
+      
+      /* Styles for the popup content */
+      .popup-content {
+        padding: 20px;
+      }
+      
+      /* Styles for the close button */
+      .close-btn {
+        font-size: 24px;
+        cursor: pointer;
+        float: right;
+        color: #333;
+      }
     .brand-name{
        color: #C0A342;
+       border-bottom: 2px solid#C0A342;
+       width: fit-content;
+       margin-left: auto;
+       margin-right: auto;
 
        font-size:2em;
        font-weight: bolder;
@@ -1988,6 +2065,19 @@ a {
     width: 300px;
 }
 }
+@media screen and (max-width: 500px) {
+
+.brand-name{
+    color: #C0A342;
+
+    font-size:1.2em;
+    font-weight: bolder;
+
+ }
+ .intro-text{
+    font-size: 0.6em;
+ }
+}
 @media screen and (max-width: 900px) {
 
 .products {
@@ -2280,19 +2370,7 @@ a {
     }
      
 }
-/* @media screen and (min-width: 550px) {
-    .brand-detail-2,.brand-detail{
-        font-weight: bolder;
-        font-size:0.5rem !important;
-        font-family: 'Kumbh Sans', sans-serif;
-        color: white;
-    
-    
-    }
 
-    
-
-} */
 @media screen and (max-width: 1100px) {
     .nav-item6{
         position: absolute;
@@ -2385,7 +2463,7 @@ a {
         }
         .brand-detail-2,.brand-detail{
             font-weight: bolder;
-            font-size:2.5rem !important;
+            font-size:1.5em;
             font-family: 'Kumbh Sans', sans-serif;
             color: white;
         
